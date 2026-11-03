@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6c4dff">
+  <meta name="description" content="Trang web giới thiệu bản thân của một học sinh lớp 10A6, Trường THPT Phú Nhuận.">
+  <title>Xin chào! — Góc nhỏ của mình</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell container" aria-label="Điều hướng chính">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark">✳</span>
+        <span>my<span class="brand-dot">.</span>little<span class="brand-dot">.</span>space</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Về mình</a>
+        <a href="#highlights">Điểm nhấn</a>
+        <a href="#journey">Hành trình</a>
+        <a href="#contact">Kết nối</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng tối" title="Đổi giao diện">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad" aria-labelledby="heroTitle">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="eyebrow light-eyebrow"><span class="eyebrow-spark">✦</span> HELLO, NICE TO MEET YOU!</div>
+          <h1 id="heroTitle">Chào bạn,<br>mình là <span class="hero-name">Tên của bạn<span class="name-spark">✳</span></span></h1>
+          <p class="hero-lead">Chào mừng bạn ghé thăm góc nhỏ của mình — nơi lưu giữ những điều thú vị trên hành trình tuổi học trò.</p>
+          <div class="hero-tags">
+            <span class="hero-tag"><span>🎒</span> Học sinh 10A6</span>
+            <span class="hero-tag"><span>📍</span> THPT Phú Nhuận</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-bright" href="#about">Khám phá về mình <span aria-hidden="true">↗</span></a>
+            <a class="text-link light-link" href="#journey">Xem hành trình <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Minh họa chủ đề học đường">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="sticker sticker-star">✦</div>
+          <div class="sticker sticker-smile">☺</div>
+          <div class="sticker sticker-spark">✳</div>
+          <div class="profile-card">
+            <div class="profile-card-top"><span>MY PROFILE</span><span class="live-dot"></span></div>
+            <div class="avatar-art">
+              <div class="avatar-halo"></div>
+              <div class="avatar-face">
+                <span class="avatar-eye eye-left"></span><span class="avatar-eye eye-right"></span>
+                <span class="avatar-smile"></span>
+              </div>
+              <div class="avatar-hair"></div>
+              <div class="avatar-body"></div>
+              <span class="avatar-shine">✦</span>
+            </div>
+            <div class="profile-card-bottom">
+              <span class="profile-name">A LITTLE INTRO</span>
+              <span class="profile-class">10A6 <b>•</b> 2026</span>
+            </div>
+          </div>
+          <div class="floating-note note-top"><span>💜</span> Be yourself!</div>
+          <div class="floating-note note-bottom"><span>🌈</span> Keep shining</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="quick-facts container" aria-label="Thông tin nhanh">
+      <div class="fact-card">
+        <span class="fact-icon fact-purple">✳</span>
+        <div><span class="fact-label">TRƯỜNG</span><strong>THPT Phú Nhuận</strong></div>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon fact-coral">✦</span>
+        <div><span class="fact-label">LỚP</span><strong>10A6</strong></div>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon fact-teal">♡</span>
+        <div><span class="fact-label">NĂM SINH</span><strong>2011</strong></div>
+      </div>
+      <div class="fact-card">
+        <span class="fact-icon fact-yellow">☀</span>
+        <div><span class="fact-label">CHÂM NGÔN</span><strong>Luôn tò mò, luôn tiến lên</strong></div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="container about-grid">
+        <div class="section-intro reveal">
+          <span class="eyebrow"><span class="eyebrow-spark">✳</span> A LITTLE ABOUT ME</span>
+          <h2>Mỗi người là<br>một <span class="text-gradient">câu chuyện</span><br>độc đáo.</h2>
+          <p>Đây là nơi mình kể một chút về bản thân, mái trường và những điều mình muốn khám phá trong những năm tháng học sinh.</p>
+          <div class="handwritten-note">Rất vui vì bạn ở đây! <span>♡</span></div>
+        </div>
+        <div class="about-content reveal">
+          <article class="about-panel">
+            <div class="panel-icon">👋</div>
+            <div>
+              <h3>Xin chào, bạn!</h3>
+              <p>Mình là một học sinh đang học tại <strong>Trường THPT Phú Nhuận</strong>, lớp <strong>10A6</strong>. Mình tạo website này để giới thiệu bản thân và lưu lại một vài dấu mốc đáng nhớ.</p>
+            </div>
+              </article>
+          <article class="about-panel">
+            <div class="panel-icon panel-icon-peach">🌱</div>
+            <div>
+              <h3>Đang trên hành trình</h3>
+              <p>Tuổi học trò là khoảng thời gian để học hỏi, thử sức với điều mới, gặp gỡ những người bạn thú vị và từng bước khám phá điều mình yêu thích.</p>
+            </div>
+          </article>
+          <div class="about-quote"><span>“</span><p>Không cần phải hoàn hảo ngay hôm nay. Chỉ cần tốt hơn mình của ngày hôm qua.</p><span class="quote-spark">✦</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights section-pad" id="highlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><span class="eyebrow-spark">✳</span> MY LITTLE UNIVERSE</span>
+          <h2>Những điều làm nên <span class="text-gradient">mình</span></h2>
+          <p>Một vài điều tích cực mình muốn mang theo trong hành trình trưởng thành.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card card-lavender reveal">
+            <div class="card-topline"><span class="card-number">01 / 03</span><span class="card-emoji">🔎</span></div>
+            <div class="card-illustration illustration-search"><span>?</span><i>✦</i><b>✳</b></div>
+            <h3>Luôn tò mò</h3>
+            <p>Đặt câu hỏi, tìm hiểu thế giới và không ngại học thêm một điều mới mỗi ngày.</p>
+            <span class="card-caption">STAY CURIOUS</span>
+          </article>
+          <article class="highlight-card card-peach reveal">
+            <div class="card-topline"><span class="card-number">02 / 03</span><span class="card-emoji">🌈</span></div>
+            <div class="card-illustration illustration-rainbow"><span>☺</span><i>✦</i></div>
+            <h3>Lan tỏa năng lượng</h3>
+            <p>Trân trọng những khoảnh khắc vui vẻ và cùng bạn bè tạo nên kỷ niệm đẹp.</p>
+            <span class="card-caption">SHARE GOOD VIBES</span>
+          </article>
+          <article class="highlight-card card-mint reveal">
+            <div class="card-topline"><span class="card-number">03 / 03</span><span class="card-emoji">🚀</span></div>
+            <div class="card-illustration illustration-rocket"><span>✧</span><i>⌁</i><b>✦</b></div>
+            <h3>Không ngừng tiến bộ</h3>
+            <p>Kiên trì với mục tiêu nhỏ, dám thử thách bản thân và trưởng thành qua từng trải nghiệm.</p>
+            <span class="card-caption">GROW AT YOUR PACE</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey section-pad" id="journey">
+      <div class="container journey-grid">
+        <div class="journey-heading reveal">
+          <span class="eyebrow light-eyebrow"><span class="eyebrow-spark">✳</span> THE JOURNEY</span>
+          <h2>Một chương<br>mới đang <span>mở ra.</span></h2>
+          <p>Mỗi ngày đến trường là một trang mới trong cuốn nhật ký tuổi trẻ.</p>
+          <div class="journey-doodle" aria-hidden="true">✳ <span>♡</span> ✦</div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">2026 — HIỆN TẠI</span>
+            <h3>Chào năm học mới!</h3>
+            <p>Bắt đầu hành trình THPT tại Trường THPT Phú Nhuận, cùng tập thể lớp 10A6 tạo nên thật nhiều kỷ niệm.</p>
+            <span class="timeline-chip">A NEW BEGINNING ✨</span>
+          </div>
+          <div class="timeline-item timeline-future">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">TƯƠNG LAI</span>
+            <h3>Những điều đang chờ phía trước</h3>
+            <p>Còn rất nhiều điều để khám phá, nhiều mục tiêu để chinh phục và nhiều câu chuyện chưa được viết ra.</p>
+            <span class="timeline-chip">TO BE CONTINUED…</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-spark spark-a">✦</div>
+          <div class="contact-spark spark-b">✳</div>
+          <span class="eyebrow light-eyebrow">LET'S BE FRIENDS</span>
+          <h2>Cảm ơn bạn đã<br>ghé thăm <span>góc nhỏ</span> này!</h2>
+          <p>Mong rằng chúng ta sẽ có thêm nhiều cơ hội học hỏi, chia sẻ và tạo nên những kỷ niệm thật đẹp.</p>
+          <a class="button button-dark" href="#top">Trở về đầu trang <span aria-hidden="true">↑</span></a>
+          <div class="contact-bottom">A LITTLE SPACE, A LOT OF DREAMS <span>♡</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">✳</span><span>my<span class="brand-dot">.</span>little<span class="brand-dot">.</span>space</span></a>
+      <p>Được tạo bằng sự tò mò và một chút sắc màu <span>♥</span></p>
+      <span class="footer-year">© <span id="currentYear"></span> · 10A6</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
